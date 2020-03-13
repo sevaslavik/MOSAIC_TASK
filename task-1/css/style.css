@@ -66,10 +66,20 @@ select:hover {
     background-color: #F8E391;
 }
 
+input {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    padding-right: 5rem;
+    text-align: left;
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: #BCEBDD;
+}
+
 .selects-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 1rem;
 }
 
 .btn {
