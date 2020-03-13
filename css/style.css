@@ -1,0 +1,88 @@
+body {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif; 
+}
+
+table {
+    margin: 5rem auto;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 14px;
+    border-radius: 10px;
+    border-spacing: 0;
+    text-align: center;
+}
+
+th {
+    background: #BCEBDD;
+    color: white;
+    text-shadow: 0 1px 1px #2D2020;
+    padding: 10px 20px;
+}
+
+th, td {
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: white;
+}
+
+th:first-child, td:first-child {
+    text-align: left;
+}
+
+th:first-child {
+    border-top-left-radius: 10px;
+}
+
+th:last-child {
+    border-top-right-radius: 10px;
+    border-right: none;
+}
+
+td {
+    padding: 10px 20px;
+    background: #F8E391;
+}
+
+tr:last-child td:first-child {
+    border-radius: 0 0 0 10px;
+}
+
+tr:last-child td:last-child {
+    border-radius: 0 0 10px 0;
+}
+
+tr td:last-child {
+    border-right: none;
+}
+
+select {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    padding-right: 5rem;
+    text-align: left;
+    border-radius: 5px;
+    border-color: #BCEBDD; 
+}
+
+select:hover {
+    background-color: #F8E391;
+}
+
+.selects-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    padding: .5rem;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 14px;
+    background: #F8E391;
+    border-color: #BCEBDD;
+    border-radius: 5px; 
+}
+
+.btn:hover {
+    text-shadow: 0 1px 1px #2D2020;
+    background: #BCEBDD;
+    color: white;
+}
