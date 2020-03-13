@@ -9,23 +9,15 @@ request.send();
 
 request.onload = function() {
 
-    let superHeroesText = request.response; 
+    let informationAboutPeople = request.response; 
     let tbody = document.querySelector('tbody');
     let daySelect = document.getElementById('day');
     let monthSelect = document.getElementById('month');
 
-    for(let i = 0; i < superHeroesText.length; i++) {
+    for(let i = 0; i < informationAboutPeople.length; i++) {
 
-        let birthday = superHeroesText[i].birthday_contact;
+        let birthday = informationAboutPeople[i].birthday_contact;
         let birthdayArr = birthday.split('-');
-
-        // let option1 = document.createElement('option');
-        // let option2 = document.createElement('option');
-        
-        // option1.innerHTML = birthdayArr[2];
-        // daySelect.appendChild(option1);
-        // option2.innerHTML = birthdayArr[1];
-        // monthSelect.appendChild(option2);
 
         let tr = document.createElement('tr');
         tr.classList.add('row');
@@ -39,12 +31,12 @@ request.onload = function() {
             tr.appendChild(td);
         }
 
-        let tdFirstname = addTd(superHeroesText[i].firstname);
-        let tdLasttname = addTd(superHeroesText[i].lastname); 
-        let tdEmail = addTd(superHeroesText[i].email);
-        let tdPhonenumber = addTd(superHeroesText[i].phonenumber);       
-        let tdBirthday = addTd(superHeroesText[i].birthday_contact, 'birthday', 'day', birthdayArr[2], 'month', birthdayArr[1]);
-        let tdCompany = addTd(superHeroesText[i].company);
+        let tdFirstname = addTd(informationAboutPeople[i].firstname);
+        let tdLasttname = addTd(informationAboutPeople[i].lastname); 
+        let tdEmail = addTd(informationAboutPeople[i].email);
+        let tdPhonenumber = addTd(informationAboutPeople[i].phonenumber);       
+        let tdBirthday = addTd(informationAboutPeople[i].birthday_contact, 'birthday', 'day', birthdayArr[2], 'month', birthdayArr[1]);
+        let tdCompany = addTd(informationAboutPeople[i].company);
 
         tbody.appendChild(tr);
 
